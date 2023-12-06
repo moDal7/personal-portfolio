@@ -1,4 +1,3 @@
-
 // Function to get data in JSON format
 function getTitle() {
   const data = {
@@ -36,9 +35,18 @@ function getSkills() {
 
 function getProjects() {
     const data = {
-      skill1: "AI & Data",
-      skill2: "Cloud Technologies",
-      skill3: "Information Security",
+      project1: {
+      name: "AI & Data",
+      description: "I am passionate about data and AI. I have experience in data analysis, machine learning and deep learning. I am also interested in the ethical implications of AI.",
+      },
+      project2: {
+        name: "AI & Data",
+        description: "I am passionate about data and AI. I have experience in data analysis, machine learning and deep learning. I am also interested in the ethical implications of AI.",
+      },
+      project3: {
+        name: "AI & Data",
+        description: "I am passionate about data and AI. I have experience in data analysis, machine learning and deep learning. I am also interested in the ethical implications of AI.",
+      },
     };
     return JSON.stringify(data);
 }
@@ -46,13 +54,11 @@ function getProjects() {
 function getContacts() {
     const data = {
       mail: "mrcdalmo@gmail.com",
-      linkedin: "linkedin.com/in/marco-dalmo/",
-      github: "github.com/moDal7",
+      linkedin: "https://linkedin.com/in/marco-dalmo/",
+      github: "https://github.com/moDal7",
     };
     return JSON.stringify(data);
 }
-
-  
 
 export {
   getTitle,
